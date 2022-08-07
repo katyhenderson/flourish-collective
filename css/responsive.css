@@ -1,0 +1,806 @@
+@charset "UTF-8";
+/* Responsive CSS Document */
+
+/* ====================================================================================
+Responsive Layout Media Queries CSS
+(can also be min-device-width or max-device-width for devices changes only)
+======================================================================================= */
+
+
+/* Working out percentages
+(Item width x 100) / Container width (e.g. 940) = %
+*/
+
+/* DEVICES SIZES
+
+iPhone 4,4s
+320 x 480 P
+480 x 320 L
+
+iPhone 5,5s
+320 x 568 P
+568 x 320 L
+
+iPad
+768 x 1024 P
+1024 x 768 L
+
+*/
+
+/* Large Desktop and iPad pro 12" - Design Width = 1300px
+======================================================== */
+
+@media only screen and (min-width: 1300px) {
+
+	/* Styles */
+
+	.footer ul{
+		width: 504px;
+	}
+
+}
+
+/* iPad pro - Design Width = 1112px
+======================================================== */
+
+@media only screen and (min-width: 1025px)  and (max-width: 1299px) {
+
+	/* Styles */
+	.footer ul{
+		width: 504px;
+	}
+	
+}
+
+
+/* iPad/Tablet (both) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	/* Styles */
+
+	.full_nav{
+		font-size: 1em;
+	}
+
+	.full_nav ul{
+		width: 751px;
+	}
+
+	.nav-header, .full_nav ul li a {
+		text-decoration: none;
+		float: left;
+		display: inline-block;
+		margin: 0 7px 0 7px;
+	}
+
+	.col{
+		margin: 0;
+	}
+
+	.what-we-do1 h2 {
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+	.information{
+		width: 100%;
+		height: 420px;
+	}
+
+	.span-1-of-3{
+		width: 33%;
+	}
+
+	.information h3{
+		font-size: 3em;
+	}
+
+	.information img {
+		height: 80px;
+	}
+
+	.information p{
+		font-size: 1.3em;
+		margin: 0 0 50px 0;
+	}
+
+	a.btn-grey:link, a.btn-grey:visited {
+		font-size: 1.2em;
+		letter-spacing: 3px;
+		padding: 10px 15px;
+	}
+
+	.col.span-1-of-2.hey-there {
+		margin: 0 0 0 85px;
+	}
+
+	.creator h3{
+		margin: 100px 0 70px 0;
+	}
+
+	.creator h4{
+		font-size: 1.5em;
+	}
+
+	.hey-there p{
+		font-size: 1.4em;
+	}
+
+	.container img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.container{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.span-1-of-4{
+		width: 45%;
+		margin: 15px;
+		text-align: center;
+	}
+
+	.enroll h3{
+		margin: 100px 0 30px 0;
+	}
+
+	h4{
+		font-size: 2em;
+		line-height: 1.8em;
+	}
+
+	.leap{
+		margin: 0 0 0 30px;
+	}
+
+	.leap p{
+		font-size: 1.5em;
+		margin: 0 0 40px 0;
+	}
+
+	input {
+		font-size: 1.5em;
+		height: 25px;
+		padding: 7px;
+		width: 200px;
+	}
+
+	a.btn-orange:link,
+	a.btn-orange:visited {
+		margin: 20px 0 0 0;
+		padding: 10px 20px;
+	}
+
+	.footer ul{
+		width: 504px;
+	}
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: block !important; }
+
+}
+
+
+/* iPad/Tablet (Landscape) - Design Width = 1024px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+	/* Styles */
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_land { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+/* iPad/Tablet (Portrait) - Design Width = 768px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+	/* Styles */
+
+
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_port { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+	
+}
+
+
+/* iPhone/Mobile (Landscape) - Design Width = 480px
+======================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* Styles */
+	.logo{
+		display: none;
+	}
+
+	#responsive_nav{
+		width: 190px;
+	}
+
+	#navigation{
+		display: block;
+	}
+
+	.full_nav{
+		display: none;
+	}
+
+	a#menu_button {
+    display: block;
+	}
+
+	.mobile_nav_header img{
+		display: block;
+		/*right: 176px;*/
+	}
+
+	.information{
+		width: 100%;
+		height: auto;
+	}
+
+	h1{
+		line-height: 1.4em;
+	}
+
+	.span-1-of-3{
+		width: 70%;
+		margin: 30px auto;
+		float: none;
+	}
+
+	.information h3{
+		font-size: 3em;
+	}
+
+	.information img {
+		height: 80px;
+	}
+
+	.information p{
+		font-size: 1.3em;
+		margin: 0 0 50px 0;
+	}
+
+	a.btn-grey:link, a.btn-grey:visited {
+		font-size: 1.2em;
+		letter-spacing: 3px;
+		padding: 10px 15px;
+	}
+
+	.col.span-1-of-2.hey-there {
+		margin: 0;
+	}
+
+	.col.span-1-of-2.working-on-laptop{
+		margin: 0 45px 0 0;
+	}
+
+	.creator h3{
+		margin: 100px 0 70px 0;
+	}
+
+	.creator h4{
+		font-size: 1.5em;
+	}
+
+	.hey-there p{
+		font-size: 1.4em;
+		margin: 0 0 20px 0;
+	}
+
+	.container img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.container{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.span-1-of-4{
+		width: 80%;
+		margin: 25px 50px;
+		text-align: center;
+	}
+
+	.enroll h3{
+		margin: 50px 0 30px 0;
+		line-height: 1.2em;
+		font-size: 2.8em;
+	}
+
+	h4{
+		font-size: 1.4em;
+		line-height: 1.8em;
+	}
+
+	.leap{
+		margin: 0 0 0 20px;
+	}
+
+	.leap p{
+		font-size: 1.5em;
+		margin: 0 0 40px 0;
+	}
+
+	input {
+		font-size: 1.5em;
+		height: 25px;
+		padding: 7px;
+		width: 200px;
+	}
+
+	a.btn-orange:link,
+	a.btn-orange:visited {
+		margin: 20px 0 0 0;
+		padding: 10px 20px;
+		text-align: center;
+	}
+
+	.footer ul{
+		width: 160px;
+		text-align: center;
+	}
+
+	.footer ul li a:link,
+	.footer ul li a:visited{
+		margin:0;
+		padding: 10px 0;
+		display: block;
+		font-size: 1em;
+		letter-spacing: 4px;
+	}
+
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_land { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+/* iPhone/Mobile (Portrait) - Design Width = 320px
+======================================================== */
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+
+	/* Styles */
+
+	.logo{
+		display: none;
+	}
+
+	#responsive_nav{
+		width: 190px;
+	}
+
+	#navigation{
+		display: block;
+	}
+
+	.full_nav{
+		display: none;
+	}
+
+	a#menu_button {
+    display: block;
+	}
+
+	.mobile_nav_header img{
+		display: block;
+		right: 90px;
+		z-index: 99;
+	}
+
+	h1{
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+
+	.what-we-do1 h2 {
+		font-size: 1.8em;
+		line-height: 1.5em;
+	}
+
+	.information{
+		width: 100%;
+		height: auto;
+	}
+
+	.span-1-of-3{
+		width: 70%;
+		margin: 30px auto;
+		float: none;
+	}
+
+	.information h3{
+		font-size: 2.8em;
+	}
+
+	.information img {
+		height: 70px;
+	}
+
+	.information p{
+		font-size: 1.2em;
+		margin: 0 0 50px 0;
+	}
+
+	a.btn-grey:link, 
+	a.btn-grey:visited {
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		padding: 6px 6px;
+		text-align: center;
+	}
+
+	.col.span-1-of-2.hey-there {
+		margin: 0 0 0 40px;
+	}
+
+	.col.span-1-of-2.working-on-laptop{
+		margin: 0;
+	}
+
+	.creator h3{
+		margin: 60px 0 50px 0;
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+
+	.creator h4{
+		font-size: 1.2em;
+	}
+
+	.hey-there p{
+		font-size: 1.1em;
+		margin: 0 0 20px 0;
+	}
+
+	.container img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.container{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.span-1-of-4{
+		width: 90%;
+		margin: 20px;
+		text-align: center;
+	}
+
+	.popular-posts h3{
+		margin: 50px 0 30px 0;
+	}
+
+	.posts{
+		margin: 0 0 20px 0;
+	}
+
+	.blog-button{
+		margin: 0 0 40px 0;
+	}
+
+	.enroll{
+		padding: 0;
+	}
+
+	.enroll h3{
+		margin: 60px 0 30px 0;
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+
+	h4{
+		font-size: 1.2em;
+		line-height: 1.4em;
+		letter-spacing: 4px;
+	}
+
+	.leap{
+		margin: 0 0 0 30px;
+	}
+
+	.leap p{
+		font-size: 1.1em;
+		margin: 0 0 40px 0;
+	}
+
+	input {
+		font-size: 0.8em;
+		height: 25px;
+		padding: 5px;
+		width: 150px;
+	}
+
+	a.btn-orange:link, 
+	a.btn-orange:visited {
+		margin: 20px 0 0 0;
+		padding: 9px 6px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+	h5{
+		font-size: 3em;
+	}
+
+	.footer ul{
+		width: 160px;
+		text-align: center;
+	}
+
+	.footer ul li a:link,
+	.footer ul li a:visited{
+		margin:0;
+		padding: 10px 0;
+		display: block;
+		font-size: 1em;
+		letter-spacing: 4px;
+	}
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_port { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+/* iPhone 5 (both) - Design Width = 480px
+======================================================== */
+
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+
+	/* Styles */
+
+	.logo{
+		display: none;
+	}
+
+	#responsive_nav{
+		width: 180px;
+	}
+
+	#navigation{
+		display: block;
+	}
+
+	.full_nav{
+		display: none;
+	}
+
+	a#menu_button {
+    display: block;
+	}
+
+	.mobile_nav_header img{
+		display: block;
+		right: 85px;
+		z-index: 99;
+		height: 35px
+	}
+
+	h1{
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+
+	.what-we-do1 h2 {
+		font-size: 1.8em;
+		line-height: 1.5em;
+	}
+
+	.information{
+		width: 100%;
+		height: auto;
+	}
+
+	.span-1-of-3{
+		width: 70%;
+		margin: 30px auto;
+		float: none;
+	}
+
+	.information h3{
+		font-size: 2.8em;
+	}
+
+	.information img {
+		height: 70px;
+	}
+
+	.information p{
+		font-size: 1.2em;
+		margin: 0 0 50px 0;
+	}
+
+	a.btn-grey:link, a.btn-grey:visited {
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		padding: 6px 6px;
+	}
+
+	.col.span-1-of-2.hey-there {
+		margin: 0 0 0 40px;
+	}
+
+	.col.span-1-of-2.working-on-laptop{
+		margin: 0;
+	}
+
+	.creator h3{
+		margin: 60px 0 50px 0;
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+
+	.creator h4{
+		font-size: 1.2em;
+	}
+
+	.hey-there p{
+		font-size: 1.1em;
+		margin: 0 0 20px 0;
+	}
+
+	.container img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.container{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.span-1-of-4{
+		width: 90%;
+		margin: 15px;
+		text-align: center;
+	}
+
+	.popular-posts h3{
+		margin: 50px 0 30px 0;
+	}
+
+	.posts{
+		margin: 0 0 20px 0;
+	}
+
+	.blog-button{
+		margin: 0 0 40px 0;
+	}
+
+	.enroll{
+		padding: 0;
+	}
+
+	.enroll h3{
+		margin: 60px 0 30px 0;
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+
+	h4{
+		font-size: 1.2em;
+		line-height: 1.4em;
+		letter-spacing: 4px;
+	}
+
+	.leap{
+		margin: 0 0 0 30px;
+	}
+
+	.leap p{
+		font-size: 1.1em;
+		margin: 0 0 40px 0;
+	}
+
+	input {
+		font-size: 0.8em;
+		height: 25px;
+		padding: 5px;
+		width: 120px;
+	}
+
+	a.btn-orange:link, 
+	a.btn-orange:visited {
+		margin: 20px 0 0 0;
+		padding: 9px 6px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+	h5{
+		font-size: 3em;
+	}
+
+	.footer ul{
+		width: 160px;
+		text-align: center;
+	}
+
+	.footer ul li a:link,
+	.footer ul li a:visited{
+		margin:0;
+		padding: 10px 0;
+		display: block;
+		font-size: 1em;
+		letter-spacing: 4px;
+	}
+
+}
+
